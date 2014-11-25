@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript" src="lib/jquery/dist/jquery.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
+    <script type="text/javascript" src="lib/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+
+    
+</head>
+<body>
+
+ <div class="progress active">
+     <div class="progress-bar" role="progressbar" data-transitiongoal="20"></div>
+ </div>
+ <div class="progress active">
+     <div class="progress-bar progress-bar-success" role="progressbar" data-transitiongoal="40"></div>
+ </div>
+ <div class="progress active">
+     <div class="progress-bar progress-bar-info" role="progressbar" data-transitiongoal="60"></div>
+ </div>
+ <div class="progress active">
+     <div class="progress-bar progress-bar-warning" role="progressbar" data-transitiongoal="80"></div>
+ </div>
+ <div class="progress active">
+     <div class="progress-bar progress-bar-danger" role="progressbar" data-transitiongoal="100"></div>
+ </div>
+
+<script type="text/javascript">
+ $(document).ready(function() {
+     $('.progress .progress-bar').progressbar();
+ });
+</script>
+</body>
+</html>

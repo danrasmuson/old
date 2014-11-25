@@ -1,0 +1,25 @@
+<ion-view title="Signup">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header" ng-controller="SignupCtrl">
+
+      <div class="list">
+        <label class="item item-input">
+          <input type="text" placeholder="First Name" ng-model="userData.firstName">
+        </label>
+        <label class="item item-input">
+          <input type="text" placeholder="Last Name" ng-model="userData.lastName">
+        </label>
+        <label class="item item-input">
+          <input type="text" placeholder="Email" ng-model="userData.email">
+        </label>
+        <label class="item item-input">
+          <input type="password" placeholder="Password" ng-model="userData.password">
+        </label>
+      </div>
+      <div class="padding">
+        <button class="button button-block button-positive" ng-click="signup();" nav-clear>Submit</button>
+      </div>
+  </ion-content>
+</ion-view>

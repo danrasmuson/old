@@ -1,0 +1,23 @@
+<ion-view title="Search">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+    <h1 style="text-align: center;">Is it PillAble?</h1>
+    <label class="item item-input">
+        <input type="text" placeholder="Drug Name" ng-model="pill">
+    </label>
+    <button class="button button-positive button-block" ng-click="viewPill(pill)">
+      Go
+    </button>
+    <br>
+    <ul class="list">
+      <div class="item item-divider">
+      Popular Medications
+      </div>
+      <li ng-repeat="pill in popular" class="item" ng-click="viewPill(pill)">
+          {{pill}}
+      </li>
+    </ul>
+  </ion-content>
+</ion-view>

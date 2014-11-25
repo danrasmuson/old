@@ -1,0 +1,36 @@
+<ion-view title="Create Story">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+  <h3>Story: {{pillName}}</h3>
+  <p>{{pill.description}}</p>
+
+  <span class="item item-divider">Difficulty to get off medication</span>
+  <div class="range range-positive">
+    <input type="range" ng-model="story.difficulty">
+  </div>
+  <!-- <span class="item item-divider">Weight Change: {{weightChange-50}} lbs</span> -->
+  <span class="item item-divider">Weight Change: {{story.weightChange-50}}lbs</span>
+  <div class="range range-positive">
+    <input type="range" min="0" max="100" ng-model="story.weightChange">
+  </div>
+  <span class="item item-divider">Mood Changes</span>
+  <div class="range range-positive">
+    <input type="range" ng-model="story.moodChange">
+  </div>
+  <span class="item item-divider">General Satisfaction</span>
+  <div class="range range-positive">
+    <input type="range" ng-model="story.satisfaction">
+  </div>
+
+  <span class="item item-divider">Comment:</span>
+  <textarea placeholder="Please enter your comments here." rows="8" cols="10" ng-model="story.comment"></textarea>
+
+  <button class="button button-block button-positive" ng-click="addStory()">
+      Submit
+  </button>
+  </ion-content>
+  <!-- <div class="bar bar-footer"> -->
+  <!-- </div> -->
+</ion-view>

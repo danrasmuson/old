@@ -1,0 +1,12 @@
+{
+  "name": "PillParadise",
+  "private": "true",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.0.0-beta.13"
+  },
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "fontawesome": "~4.2.0",
+    "progressbar.js": "~0.5.2"
+  }
+}

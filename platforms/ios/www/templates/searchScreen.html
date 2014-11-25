@@ -1,0 +1,17 @@
+<div class="modal">
+  <ion-content>
+    <div class="bar bar-header item-input-inset">
+      <label class="item-input-wrapper">
+        <i class="icon ion-ios7-search placeholder-icon"></i>
+        <input id="searchBox" type="search" placeholder="Search" ng-model="query">
+      </label>
+      <button class="button button-clear" ng-click="closeSearch()">
+        Cancel
+      </button>
+    </div>
+
+    <li class="item" ng-repeat="pill in (pills|filter:query).slice(0,100)" ng-click="viewPill(pill)">
+      {{pill}}
+    </li>
+  </ion-content>
+</div>

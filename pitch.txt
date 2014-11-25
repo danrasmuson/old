@@ -1,0 +1,70 @@
+Pet's friend, we can call her Julie, was taking strong anti-depresents. She had been on the medication for only about three months and started to feel better. So she stopped taking them. Little did she know, that she had begun a seven month journey to break her a addiction. 
+
+Certain medications, such as the one Julie was taking, may have a long and painful withdrawal. Symptoms such stomach bugs, feeling like you have the flu, and sucidial thoughts are just a few. 
+
+Julie said that if she had know about the painful withdrawal process she might not have taken the medication at all.
+
+Pillable is a platform for people to connect and share their experiences with a medication.
+
+I want to stress pillable is more then just a forum or information portal. Pillable is a community for people like Julie to find support and friends through a diffcult withdrawal.
+
+Okay.
+
+Now, you might be asking. 'Alright Dan I'm picking up what your laying down, but how does this whole pillable thing work?'
+Well, handsome audience member, I'm glad you asked.
+
+Pillable, is starting as a native mobile application. 
+
+Let me go through the app with you.
+The tagline is 'Is it pillable?', I.E. is this a medication something I want to put in my body.
+Also with the search we have a browse popular section. We hope to also add a best/worst medication list.
+
+Okay so lets say we make a search for effexor.
+    We will be greeted by the medication 
+    we have a picture from pillbox that we can verify the medication is correct and then 
+    also a shorct description of the medication
+
+    next we have an overview that averages reviews of the users
+        here we have 
+            difficulty to get off medication
+            weight changes
+            mood changes
+            general satisifaction
+
+    within the pill overview page we have a story section
+        where a member can contribute there experience or useful insight they had while on the medication 
+        there will also be the ability to review anonymously
+
+    next we helpful actions such as 
+        linking to pillbox for the drug information
+        or ordering a refill through the walgreens API
+
+    Now let me show you a seperate medication with no reviews
+
+    I would like to mention everything you're seeing here is happening lives.
+        All of these medications are dynamic 
+        and this app is not too far away from being operational
+
+    Open Lithium Carbonate
+        no reviews
+        If we add a review we are invited to the review screen
+
+        where we have a series of sliders that correspond to bars you saw on the other page
+
+        So lets enter some data
+
+        you see how it reflects the the weight change with a number
+
+        and finally I'll put general satisfaction all the way up for the example
+
+    Now lets go through the profile page
+        Via an integration with Walgreens users can track their health history directly through Pillable
+            You simply update the metric
+            click sync 
+            and your able to track your medications impact on your health
+
+Pillable is only two days old. Imagine the potential impact it has to socialize medecine.
+
+Thank you.
+
+And just in case you were wondering... I also built it for android.

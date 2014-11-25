@@ -1,0 +1,63 @@
+<ion-view title="{{toTitleCase(pillName)}}">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+
+  <ion-content class="has-header" id="pill">
+    <div id="header">
+      <img ng-src="{{pill.image}}" alt="" class="profileImgHeader"> 
+      <p id="description">{{pill.description}}</p>
+    </div>
+
+    <div class="item item-divider">
+      Overview: 
+    </div>
+    Difficulty to get off medication
+    <div class="progress active">
+      <div class="progress-bar progress-bar-danger" role="progressbar" data-transitiongoal="{{overview.difficulty}}"></div>
+    </div>
+
+    Weight Changes 
+    <div class="progress active">
+     <div class="progress-bar progress-bar-warning" role="progressbar" data-transitiongoal="{{overview.weightChange}}"></div>
+    </div>
+
+    Mood Changes
+    <div class="progress active">
+      <div class="progress-bar progress-bar-info" role="progressbar" data-transitiongoal="{{overview.moodChange}}"></div>
+    </div>
+
+    General Satisfaction
+    <div class="progress active">
+      <div class="progress-bar progress-bar-success" role="progressbar" data-transitiongoal="{{overview.satisfaction}}"></div>
+    </div>
+
+    <div class="list">
+        <div class="item item-divider">
+          Reviews: 
+        </div>
+
+        <a ng-repeat="review in pill.reviews" class="item item-thumbnail-left" href="#" >
+          <img ng-src="{{review.profile.image}}">
+          <h2>{{review.profile.name}}</h2>
+          <p>{{review.comment}}</p>
+        </a>
+
+    </div>
+    <ul class="list">
+      <div class="item item-divider">
+        Action 
+      </div>
+      <li class="item" ng-click="browser(pill.information)">Drug Information</li>
+      <li class="item" ng-click="browser(pill.refill)">Walgreens Order Refill<li></li> 
+    </ul>
+    <br>
+  </ion-content>
+
+  <div class="bar bar-footer">
+    <button class="button button-clear" ng-click="writeReview(pillName)" style="width: 100%;">
+        Write Review
+        <i class="icon ion-edit"></i>
+    </button>
+  </div>
+</ion-view>

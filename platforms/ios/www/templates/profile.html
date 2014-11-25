@@ -1,0 +1,47 @@
+<ion-view title="Profile">
+<ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+</ion-nav-buttons>
+
+<ion-content class="has-header" id="pill">
+    <table class="table table-striped">
+        <tr>
+            <td class="bold">Name</td>
+            <td>
+                {{profile.name}}
+            </td>
+        </tr>    
+        <tr>
+            <td class="bold">Weight</td>
+            <td>
+                {{profile.weight}}
+                <i class="icon ion-edit" ng-click="getWeight()"></i>
+            </td>
+        </tr>
+        <tr>
+            <td class="bold">Blood Pressure</td>
+            <td>
+                {{profile.bloodPressure}}
+                <i class="icon ion-edit" ng-click="getBloodPressure()"></i>
+            </td>
+        </tr>
+        <tr>
+            <td class="bold">Blood Glucose</td>
+            <td>
+                {{profile.glucose}}
+                <i class="icon ion-edit" ng-click="getGlucose()"></i>
+            </td>
+        </tr>
+    </table>
+
+    <button class="button button-balanced button-block" ng-click="syncWalgreen()" ng-disabled="pristine">
+    {{walgreensText}}
+    <span ng-show="loading">
+        <i class="fa fa-spinner fa-spin"></i>
+    </span>
+    <span ng-show="successSync">
+        <i class="fa fa-check"></i>
+    </span>
+    </button>
+</ion-content>
+</ion-view>

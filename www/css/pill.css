@@ -1,0 +1,15 @@
+#pill{
+
+}
+#pill #description{
+    font-weight: bold;
+    padding-top: 5px;
+}
+#pill img{
+    float: left;
+    padding: 8px;
+}
+#pill #header{
+    display: block;
+    height: 120px;
+}

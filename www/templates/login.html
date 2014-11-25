@@ -1,0 +1,25 @@
+<ion-view title="Login">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header" ng-controller="LoginCtrl">
+
+    <div class="ionic-body active-preview">
+        <div class="list">
+            <label class="item item-input">
+                <input type="text" placeholder="Email" ng-model="loginData.username">
+            </label>
+            <label class="item item-input">
+                <input type="password" placeholder="Password" ng-model="loginData.password">
+            </label>
+        </div>
+        <div class="padding">
+            <button class="button button-block button-positive" ng-click="login();" nav-clear>Submit</button>
+        </div>
+        <div class="padding" ng-click="signup()">
+            <button class="button button-block button-default" ng-click="signup()">Signup</button>
+        </div>
+    </div>
+
+  </ion-content>
+</ion-view>
