@@ -83,7 +83,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: "/story/write/:PillName",
       views: {
         'menuContent' :{
-          templateUrl: "templates/writestory.html",
+          templateUrl: "templates/writeStory.html",
           controller: 'WriteStoryCtrl'
         }
       }
