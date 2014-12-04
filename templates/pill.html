@@ -38,8 +38,9 @@
         </div>
 
         <a ng-repeat="story in pill.stories" class="item item-thumbnail-left" href="#/app/story/{{story.story_id}}" >
+        <!-- <a ng-repeat="story in pill.stories" class="item item-thumbnail-left"> -->
           <img ng-src="{{story.profile.image}}">
-          <h2>{{story.profile.name}}</h2>
+          <h2>{{story.title}}</h2>
           <p>{{story.comment}}</p>
         </a>
  

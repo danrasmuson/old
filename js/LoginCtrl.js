@@ -1,7 +1,29 @@
 angular.module('starter.controllers')
 // TODO put this location stuff in service
-.controller('LoginCtrl', function($scope, UrlService, $http, UserService, $ionicPopup, $ionicViewService) {
+.controller('LoginCtrl', function($scope, UrlService, $http, UserService, $ionicPopup, $ionicViewService, $ionicModal) {
   $scope.userData = UserService.getSession()
+
+  // Create the login modal that we will use later
+  $ionicModal.fromTemplateUrl('templates/about.html', {
+    scope: $scope
+  }).then(function(modal) {
+    $scope.modal = modal;
+    // you can put it in the localstorage
+
+    var applaunchCount = window.localStorage.getItem('launchCount');
+
+    //Check if it already exists or not
+    if(applaunchCount){
+       //This is a second time launch, and count = applaunchCount
+    }else{
+      //Local storage is not set, hence first time launch. set the local storage item
+      window.localStorage.setItem('launchCount',1);
+
+      //Do the other stuff related to first time launch
+       // $scope.about();
+      $scope.modal.show();
+    } 
+  });
 
   $scope.loginData = {
     username: "",
@@ -38,5 +60,16 @@ angular.module('starter.controllers')
     UserService.setSession(false);
     window.location.replace('#/app/login');
   }
+
+  // Open the login modal
+  $scope.about = function() {
+    $scope.modal.show();
+  };
+
+  // Triggered in the login modal to close it
+  $scope.closeAbout = function() {
+    $scope.modal.hide();
+  };
+
 
 });

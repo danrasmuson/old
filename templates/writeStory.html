@@ -6,6 +6,13 @@
   <h3>Story: {{pillName}}</h3>
   <p>{{pill.description}}</p>
 
+  <span class="item item-divider">Story Title</span>
+  <div class="item item-input-inset">
+    <label class="item-input-wrapper">
+      <input type="text" placeholder="Title" ng-model="story.title">
+    </label>
+  </div>
+
   <span class="item item-divider">Difficulty to get off medication</span>
   <div class="range range-positive">
     <input type="range" ng-model="story.difficulty">

@@ -1,8 +1,36 @@
-<ion-view title="Search">
+<ion-view title="Story">
   <ion-nav-buttons side="left">
     <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
   </ion-nav-buttons>
   <ion-content class="has-header">
-    hello story {{reviewNum}}
+
+    <div class="bar bar-header bar-light">
+      <h1 class="title">{{storyData.title}}</h1>
+    </div>
+
+    <p class="storyComment">{{storyData.comment}}</p>
+
+    Difficulty to get off medication
+    <div class="progress active">
+      <div class="progress-bar progress-bar-danger" role="progressbar" data-transitiongoal="{{storyData.difficulty}}"></div>
+    </div>
+
+    Weight Changes 
+    <div class="progress active">
+     <div class="progress-bar progress-bar-warning" role="progressbar" data-transitiongoal="{{storyData.weightChange}}"></div>
+    </div>
+
+    Mood Changes
+    <div class="progress active">
+      <div class="progress-bar progress-bar-info" role="progressbar" data-transitiongoal="{{storyData.moodChange}}"></div>
+    </div>
+
+    General Satisfaction
+    <div class="progress active">
+      <div class="progress-bar progress-bar-success" role="progressbar" data-transitiongoal="{{storyData.satisfaction}}"></div>
+    </div>
+
+
+    
   </ion-content>
 </ion-view>

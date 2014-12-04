@@ -20,8 +20,8 @@ angular.module('starter.controllers')
     // TODO CHANGE TITLE AND USERID
     $scope.story = {
         userId: 10,
-        title: 'TEST TITLE',
-        comment: "",
+        title: '',
+        comment: '',
         difficulty: 50,
         moodChange: 50,
         weightChange: 50,

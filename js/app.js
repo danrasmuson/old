@@ -40,6 +40,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     })
 
+    .state('app.about', {
+      url: "/about",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/about.html"
+        }
+      }
+    })
+
     .state('app.profile', {
       url: "/profile",
       views: {
@@ -83,7 +92,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: "/story/write/:PillName",
       views: {
         'menuContent' :{
-          templateUrl: "templates/writeStory.html",
+          templateUrl: "templates/writestory.html",
           controller: 'WriteStoryCtrl'
         }
       }
